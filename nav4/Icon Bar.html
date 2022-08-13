@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Bar</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .nav1{
+        background-color: #555555;
+        width: 90vw;
+        height: 65px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+    .imgs{
+        /* float: left; */
+        border: 2px solid red;
+        width: 33px;
+        height: 36px;
+    }
+</style>
+<style>
+        .nav2{
+        background: #000;
+        color: white;
+        width: 100%;
+        height: 60px;
+        /* margin: auto; */
+    }
+    .container-en{
+        display: flex;
+        justify-content: space-around;
+    }
+    .buttons{
+        /* border: 2px solid white; */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+
+
+
+    }
+    .btn{
+        margin: 10px;
+        /* border: 2px solid white; */
+    }
+
+</style>
+<body>
+    <nav>
+        <ul class="nav1">
+            <div class="icon Home">
+                <img src="/nav4/Images/home.png" alt="" class="imgs">
+            </div>
+            <div class="icon Search">
+                <img src="/nav4/Images/clipart85921.png" alt="" class="imgs">
+            </div>
+            <div class="icon Mail">
+                <img src="/nav4/Images/email.png" alt="" class="imgs">
+            </div>
+            <div class="icon World">
+                <img src="/nav4/Images/earth-globe.png" alt="" class="imgs">
+            </div>
+            <div class="icon Delete">
+                <img src="/nav4/Images/delete-16.png" alt="" class="imgs">
+            </div>
+        </ul>
+    </nav>
+    <nav class="nav2">
+        <ul class="container-en">
+            <div class="logo">
+                <img src="/nav4/Images/Enver/logo.svg" alt="">
+            </div>
+            <div>
+                <ul class="buttons">
+                    <li class="btn home">Home</li>
+                    <li class="btn services">Services</li>
+                    <li class="btn project">Our Project</li>
+                    <li class="btn about">About us</li>
+                </ul>
+            </div>
+            <div class="contact">Contact Us</div>
+        </ul>
+    </nav>
+</body>
+</html>
