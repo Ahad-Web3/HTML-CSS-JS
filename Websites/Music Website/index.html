@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Website </title>
-</head>
-<link rel="stylesheet" href="style.css">
-<body >
-    <header class="bg" >
-        <nav class="navbar">
-            <div class="logo">
-                <img src="/Websites/Music Website/Images/logo.png" alt="">
-            </div>
-            <div>
-                <ul class="navlinks">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SPECIFICATIONS</a></li>
-                    <li><a href="">PRODUCTS</a></li>
-                    <li><a href="">CONNECT</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="content">
-            <div class="left-column">
-                <h1>THE REAL SOUND</h1>
-            </div>
-            <div class="right-column">
-                <p>
-                    Click Here To Listen
-                </p>
-                <img src="/Websites/Music Website/Images/play.png" alt="">
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Website</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <!-- <script src="script.js"></script>  -->
+  <body>
+    <header class="bg">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/Websites/Music Website/Images/logo.png" alt="" />
         </div>
+        <div>
+          <ul class="navlinks">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SPECIFICATIONS</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li><a href="">CONNECT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="left-column">
+          <h1>
+            THE <br />
+            REAL <br />
+            SOUND
+          </h1>
+        </div>
+        <div class="right-column">
+          <p>Click Here To Listen</p>
+          <img src="/Websites/Music Website/Images/play.png" alt="" id="icon" />
+
+          <audio
+            id="mysong"
+            src="/Websites/Music Website/Images/music.mp3"
+            type="audio/mp3"
+          ></audio>
+        </div>
+      </div>
     </header>
-</body>
+    <script>
+      var mysong = document.getElementById("mysong");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+       
+        if(mysong.paused){
+             mysong.play();
+             icon.src = "/Websites/Music Website/Images/pause.png"
+        }else{
+                mysong.pause();
+                icon.src = "/Websites/Music Website/Images/play.png";
+        }
+
+      };
+    </script>
+  </body>
 </html>
