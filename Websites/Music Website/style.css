@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bg{
+    height: 100vh;
+    width: 100%;
+    border: 2px solid black;
+    background-color: pink;
+    /* background-image: url("https://source.unsplash.com/1500x1500"); */
+    background-image: url("./Images/image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.logo{
+}
