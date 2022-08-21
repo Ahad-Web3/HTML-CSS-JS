@@ -19,13 +19,13 @@
     --fw-regular: 400;
     --fw-bold: 700; 
 
-    --fs-300: 0.875rem;
+    --fs-14: 0.875rem;
     --fs-16: 1rem;
-    --fs-500: 1.25rem;
-    --fs-600: 1.5rem;
-    --fs-700: 2.25rem;
-    --fs-800: 4rem;
-    --fs-900: 6rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-36: 2.25rem;
+    --fs-64: 4rem;
+    --fs-96: 6rem;
 }
 
 .header{
@@ -66,4 +66,36 @@
     color: var(--clr-white);
     padding: 10px 20px;
     background-color: var(--clr-orange);
+}
+
+h2{
+    font-size: var(--fs-64);
+}
+h3{
+    font-size: var(--fs-24);
+}
+h4{
+    font-size: var(--fs-20);
+    font-weight: var(--fw-regular);
+    color: var(--clr-black-light);
+}
+h5{
+    font-size: var(--fs-16);
+}
+
+.title-subtitle-heading{
+    /* border: 2px solid blue; */
+    margin: 80px 235px 0px 235px;
+    text-align: center;
+    font-size: var(--fs-96);
+}
+
+.title-subtitle h4{
+    /* border: 2px solid black; */
+    margin: 40px 339px 0px 335px;
+    text-align: center;
+}
+.title-subtitle img{
+    float: right;
+    margin: 217px 155px;
 }
