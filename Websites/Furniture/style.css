@@ -128,3 +128,16 @@ h5{
     display: block;
     margin: auto;
 }
+
+.about-us{
+    width: 50%;
+    margin-left: 135px;
+}
+.grid{
+    float: left;
+    width: 45%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 370px 157px;
+}
