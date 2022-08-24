@@ -133,11 +133,53 @@ h5{
     width: 50%;
     margin-left: 135px;
 }
-.grid{
-    float: left;
-    width: 45%;
+.about-us{
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+.aboutus__bottom{
+    display: flex;
+
+}
+.left-aboutus{
+    border: 1px solid red;
+    width: 50%;
+    margin: auto;
+
+}
+.steps{
     display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 270px 270px;
-    grid-template-rows: 370px 157px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 33px;
+    /* margin: 100px auto; */
+}
+.num{
+    color: #F66B0E;
+}
+
+
+
+
+.grid{
+    border: 1px solid black;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 270px );
+    grid-template-rows: minmax(min-content, max-content);
+    width: 570px;
+    height: 663px;
+}
+.row1{
+    display: grid;
+    row-gap: 30px;
+    align-items: flex-end;
+    padding-top: 76px;
+}
+.row2{
+    display: grid;
+    row-gap: 30px;
+    align-items: flex-start;
 }
