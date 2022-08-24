@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid{
+        /* border: 2px solid black; */
+        width: 570px;
+        height: 633px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 270px 270px;
+        grid-template-rows: minmax(min-content, max-content);
+        
+    }
+    .grid img{
+        /* width: 100%; */
+        
+    }
+    .row1{
+        display: grid;
+        gap: 30px;
+        /* grid-template-rows: auto; */
+        /* grid-auto-rows: minmax(400px, auto); */
+        /* align-items: flex-end; */
+        padding-top: 76px;
+    }
+    .row2{
+        display: grid;
+        gap: 30px;
+        align-items: flex-start;
+        padding-bottom: 63px;
+    }
+</style>
+<body>
+        <div class="grid">
+            <div class="row1">
+                <img src="../Websites/Furniture/images/image1.png" alt="">
+                <img src="../Websites/Furniture/images/image2.png" alt="">
+            </div>
+            <div class="row2">
+                <img src="../Websites/Furniture/images/image3.png" alt="">
+                <img src="../Websites/Furniture/images/image4.png" alt="">
+            </div>
+
+        </div>
+</body>
+</html>
