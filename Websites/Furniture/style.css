@@ -31,6 +31,7 @@
 .header{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     /* border: 2px solid blue; */
+    
 }
 .nav{
     /* border: 2px solid #112B3C; */
@@ -41,7 +42,8 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    margin: 0 135px;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 .menu-list{
     display: flex;
@@ -70,6 +72,7 @@
 
 h2{
     font-size: var(--fs-64);
+    font-weight: var(--fw-bold) ;
 }
 h3{
     font-size: var(--fs-24);
@@ -136,7 +139,7 @@ h5{
     margin-left: 135px;
 }
 .about-us{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 80%;
     max-width: 1440px;
     margin: auto;
@@ -146,7 +149,7 @@ h5{
 
 }
 .left-aboutus{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50%;
     margin: auto;
 
@@ -167,7 +170,7 @@ h5{
 
 
 .grid{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 270px );
@@ -246,6 +249,61 @@ h5{
     left : 8%;
 }
 
-.testimonial{
-    display: none;
+/* testimonial container styling */
+.title h2{
+    margin: 80px 0 60px 135px;
+}
+
+.testimonial__container{
+    /* display: none; */
+    /* border: 2px solid orangered; */
+    color: #FFFFFF;
+    background: #112B3C;
+    margin: 100px auto;
+    max-width: 1440px;
+    height: 86.2vh;
+}
+.testi-content{
+    /* border: #FFFFFF 2px solid; */
+    width: 85%;
+    margin: 60px auto 76px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testi-content-left{
+    width: 50%;
+    /* border: #F66B0E 2px solid; */
+}
+.testi-content__right{
+    width: 45%;
+    /* border: #F66B0E 2px solid; */
+
+}
+.t{
+    display: inline-block;
+}
+.star{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.testi-content__right h3{
+    line-height: 45px;
+    margin-bottom: 24px;
+}
+.testi-content__right h4{
+    color: #FFFFFFCC;
+    line-height: 160%;
+}
+#wade{
+    color: #F66B0E;
+    line-height: 100%;
+    /* margin: 24px 0px 0px 6px ; */
+}
+#arrow{
+    position: absolute;
+    right: 0%;
+    bottom: 50px;
 }
