@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid with equal images size</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --columns: 2;
+    }
+    .grid{
+        display: grid;
+        grid-auto-flow: column dense;
+        gap: 5px;
+        grid-template-columns: 
+        [col]   1fr
+        [col]   1fr
+        ;
+        grid-template-rows: 
+        [row] 1fr
+        ;
+        /* grid-template-columns: repeat(4, [col-start] 250px [col-end]); */
+    }
+    img{
+        width: 100%;
+    }
+    /* .row1{
+        display: grid;
+        row-gap: 20px;
+    }
+    .row2{
+        display: grid;
+        row-gap: 20px;
+    } */
+
+  </style>
+  <body>
+    <main class="grid">
+        <img src="https://source.unsplash.com/random/?Fashion Street Photography">
+        <img src="https://source.unsplash.com/random/?Geometric Street Photography">
+        <img src="https://source.unsplash.com/random/?Smart Street Photography">
+        <img src="https://source.unsplash.com/random/?Street Photography">
+        <img src="https://source.unsplash.com/random/?Unobtrusive Street Photography">
+        <img src="https://source.unsplash.com/random/?Intrusive Street Photography">
+        <img src="https://source.unsplash.com/random/?Raw-Style Street Photography">
+        <img src="https://source.unsplash.com/random/?Fine-Art Street Photography">
+
+      <!-- <div class="row row1">
+          <img src="https://source.unsplash.com/random/?Unobtrusive Street Photography">
+          <img src="https://source.unsplash.com/random/?Intrusive Street Photography">
+          <img src="https://source.unsplash.com/random/?Raw-Style Street Photography">
+          <img src="https://source.unsplash.com/random/?Fine-Art Street Photography">
+      </div>
+      <div class="row row2">
+          <img src="https://source.unsplash.com/random/?Fashion Street Photography">
+          <img src="https://source.unsplash.com/random/?Geometric Street Photography">
+          <img src="https://source.unsplash.com/random/?Smart Street Photography">
+          <img src="https://source.unsplash.com/random/?Street Photography">
+      </div> -->
+    </main>
+  </body>
+</html>
