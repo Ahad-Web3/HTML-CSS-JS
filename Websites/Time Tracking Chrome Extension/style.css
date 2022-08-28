@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
     width: 360px;
     border: 2px solid black;
     height: 600px;
+    margin: auto;
 }
 header {
-    border: 2px solid red;
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid red; */
     top: 43px;
     margin: 47px auto;
 }
@@ -17,12 +20,34 @@ header h1{
     margin: 0 80px;
 }
 header p{
-    margin: 0 80px;
+    margin: 0 46px;
+    font-size: 20px;
+    font-weight: 700;
 
 }
 main{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 .clock{
-    
+    font-family: DS-Digital;
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0 40px;
+}
+.buttons{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 53px;
+}
+.btn{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #037DD7;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+
 }
