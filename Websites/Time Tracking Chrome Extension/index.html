@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/DS-DIGI.TTF">
 </head>
-<body>
+<body onload="startTime()">
     <header>
         <h1>Time Tracker</h1>
         <p>Record your times efficiently
         </p>
     </header>
     <main>
-        <div class="clock">
+        <div class="clock" id="txt">
             <p>00: 50: 30</p>
         </div>
         <div class="buttons">
@@ -26,4 +26,22 @@
         </div>
     </main>
 </body>
+
+<script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
 </html>
