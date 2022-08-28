@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 360px;
+    border: 2px solid black;
+    height: 600px;
+}
+header {
+    border: 2px solid red;
+    top: 43px;
+    margin: 47px auto;
+}
+header h1{
+    margin: 0 80px;
+}
+header p{
+    margin: 0 80px;
+
+}
+main{
+    border: 2px solid blue;
+}
+.clock{
+    
+}
