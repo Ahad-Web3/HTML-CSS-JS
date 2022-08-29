@@ -42,17 +42,27 @@ h1 {
 .row {
     /* display: flex => flex container */
     display: flex;
-
+    justify-content: center;
+    align-items: center;
     /* can't use yet */
-    /* gap: 100px; */
+    gap: 100px;
 }
-
+.row2{
+    color: white;
+}
+.container2{
+    background-color: #23424A;
+}
 .col {
-    border: 2px red solid;
+    /* border: 2px red solid; */
     /* these are now flex items */
-    width: 100%;
-    display: flex;
-
+    /* display: inline-flex; */
+    margin: 100px auto;
+    /* padding: ; */
+}
+.col {
+    /* border: #38CFD9 1px solid; */
+    text-align: center;
 }
 
 .hero {
