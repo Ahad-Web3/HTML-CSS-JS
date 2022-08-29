@@ -48,8 +48,11 @@ h1 {
 }
 
 .col {
+    border: 2px red solid;
     /* these are now flex items */
     width: 100%;
+    display: flex;
+
 }
 
 .hero {
