@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call Backs</title>
+    <link rel="stylesheet" href="callback2.js" />
+  </head>
+  <body></body>
+  <script>
+    const posts = [
+      { title: "Post one", body: "This is post one" },
+      { title: "Post two", body: "this is post two" },
+    ];
+
+    function getPosts() {
+      setTimeout(function () {
+        let output = "";
+        posts.forEach(function (post, title) {
+          output += `<li>${posts.title}</li>`;
+        });
+        document.body.innerHTML = output;
+      }, 1000);
+    }
+    getPosts();
+  </script>
+</html>
