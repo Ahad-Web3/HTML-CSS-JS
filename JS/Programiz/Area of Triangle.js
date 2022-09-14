@@ -1,14 +1,11 @@
-/*
-Area of Triangle of sides a, b, c;
-Area = a*b*c;
-*/
-
 const prompt =  require("prompt-sync")();
+/*Area of Triangle of base and height is Base * Height.*/
+let base = parseInt(prompt("Enter base of Triangle: "));
+let height = parseInt(prompt("Enter height of Triangle: "));
 
-let a = parseInt(prompt("Enter first side of Triangle: "));
-let b = parseInt(prompt("Enter second side of Triangle: "));
-let c = parseInt(prompt("Enter third side of Triangle: "));
+Area = (base*height)/2;
 
-Area = a*b*c;
+console.log(`${Area}`);
 
-console.log(`Area of triangle with sides ${a}, ${b}, ${c} is ${Area}`);
+
+console.log(`Area of triangle with base:${base} and Height:${height} is ${Area}`);
