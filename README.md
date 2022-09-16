@@ -1,2 +1,2 @@
 # HTML-CSS-JS
-Documenting my learnings of HTML CSS and JavaScript
+Documenting my learning journey of HTML CSS and JavaScript
