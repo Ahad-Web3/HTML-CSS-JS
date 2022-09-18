@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
 
 .container1{
     background-color: #f3eed9;
@@ -81,7 +84,7 @@
 .col h3{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #;
+    color: white;
 }
 .p{
     color: #222c2a;
