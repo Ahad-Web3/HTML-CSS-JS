@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Animation</title>
+  </head>
+  <style>
+    .container {
+      padding-block: 10rem;
+    }
+    .square {
+      padding: 2rem;
+      background-color: red;
+      width: fit-content;
+    }
+    h1 {
+      font-size: 1rem;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="square">
+        <h1>10 Reasons You Should Fall In Love With Photography.</h1>
+      </div>
+    </div>
+
+    <script src="/node_modules/animejs/lib/anime.min.js"></script>
+    <script>
+      anime({
+        targets: ".square",
+        translateX: 100,
+        // translateY: 200,
+        // rotateZ: 360,
+        // scale: 1.5,
+        duration: 2000,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
