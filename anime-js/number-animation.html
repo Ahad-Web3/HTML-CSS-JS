@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Animation</title>
+  </head>
+  <style>
+    .container {
+      padding-block: 10rem;
+    }
+    .square {
+      padding: 2rem;
+      background-color: rgb(72, 83, 182);
+      color: aliceblue;
+      font-weight: bold;
+      /* width: fit-content; */
+      border-radius: 50px;
+      font-size: 2rem;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <input class="square" value="0" />
+    </div>
+
+    <script src="/node_modules/animejs/lib/anime.min.js"></script>
+    <script>
+      anime({
+        targets: ".square",
+        value: [0, 90],
+        durations: 6000,
+        round: 1,
+        loop: true,
+        // easing: "linear",
+        direction: "alternate",
+      });
+    </script>
+  </body>
+</html>
