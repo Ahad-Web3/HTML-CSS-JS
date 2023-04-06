@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body{
+  margin: 0;
+}
+.App{
+  margin: auto;
+  max-width: 550px;
+  margin-top: 200px;
+}
+h1{
+  font-size: 39px;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  margin-bottom: 46px;
+  margin-top: 0px;
+}
+h2{
+  font-size: 22.25px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: #61DAFB;
+
+}
+h3{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #DEEBF8;
+}
+li{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+padding-bottom: 20px;
+}
+li::marker{
+  color: #61DAFB;
+  font-size: 1.4rem;
+}
+ul{
+  max-width: 400px;
+}
+.navlogo{
+  display: flex;
+  align-items: center;
+  gap: 6.68px;
+}
+.navbar{
+  background: #21222A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 26px;
+}
+.main-component{
+  background: #282D35;
+  padding: 57px 27px;
+  color: #FFFFFF;
+  position: relative;
+}
+.logo-large{
+  position: absolute;
+  right: 0%;
+  top: 20%;
+}
